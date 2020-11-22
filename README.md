@@ -1,6 +1,8 @@
-## Hacker News - Dark Theme
+## Hacker News - Dark Theme FH
 
-A userscript to install a dark theme for [hacker news] (http://news.ycombinator.com).
+A userscript to install a Firehawke-customized dark theme for [Hacker News] (http://news.ycombinator.com).
+
+So, why this fork of the [original userscript](https://github.com/dparpyani/HackerNews-DarkTheme)? The author of these modifications has severe light sensitivity, but felt the need to adjust the contrast levels for text, links, and other important parts of the page. After making a number of adjustments, he decided to make this fork to keep his changes easier to maintain.
 
 ### Installation
 
