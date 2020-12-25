@@ -6,7 +6,7 @@
 // @include           https://news.ycombinator.com*
 // @require           https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // @grant             none
-// @version           1.01
+// @version           1.02
 // ==/UserScript==
 
 var loadScript = function (src, callback) {
@@ -91,7 +91,7 @@ function start() {
   myJQuery('.subtext > a').css('color', config.comheadLinksColor);
 
   myJQuery('input').css('color', config.inputColor);
-  myJQuery('.pagetop:eq(1)').children().css('color', 'yellow'); // Login button
+  //myJQuery('.pagetop:eq(1)').children().css('color', 'yellow'); // Login button
 
   myJQuery('.storylink').css('color', config.storyTitle);
 
@@ -125,11 +125,13 @@ function start() {
     myJQuery('.comhead > a').css('color', config.comheadLinksColor);
 
     //// Bar at top
-    myJQuery('tr:eq(0)').next().html(config.topBarText);
+      // This line is breaking in article comments pages, why?
+    //myJQuery('tr:eq(0)').next().html(config.topBarText);
     myJQuery('tr:eq(0)').next().css('background-color', config.topBarColor);
-  }  else {
+  } else {
     //// Bar at top
-    myJQuery('tr:eq(0)').next().html(config.topBarText);
+      // This line is breaking on the main article list page. Why?
+    //myJQuery('tr:eq(0)').next().html(config.topBarText);
     myJQuery('tr:eq(0)').next().css('background-color', config.topBarColor);
   }
 
